@@ -2,26 +2,59 @@
 *::after,
 *::before{
     box-sizing: border-box;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
 }
 
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .mainContainer{
     margin: 0 auto;
-    max-width: 1375px;
+    max-width: 1365px;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 288px 1fr;
-    grid-template-columns: 511px 1fr;
+    grid-template-rows: 1fr 262px 1fr;
+    grid-template-columns: 508px 1fr;
     justify-content: center;
     background: no-repeat left/80% url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1862&q=80);
     background-size: contain;
 }
 
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.odinTitle{
+    font-family: Norse-Bold;
+    font-size: 5.75rem;
+}
+
+
+.logoBackground{
+    height: 142px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.438);
+}
+
+.logoBackground > img{
+    width: 90px;
+    height: fit-content;
+}
 
 
 div:nth-of-type(even){
@@ -30,5 +63,16 @@ div:nth-of-type(even){
 }
 
 div:nth-of-type(odd){
+    color: white;
+}
+
+.imageCreditsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 0.8rem;
+    }
+
+.imageCreditsContainer a{
     color: white;
 }

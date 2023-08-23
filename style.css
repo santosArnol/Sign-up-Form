@@ -20,20 +20,33 @@ body{
 
 .mainContainer{
     margin: 0 auto;
-    max-width: 1365px;
+    max-width: 1375px;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 262px 1fr;
-    grid-template-columns: 508px 1fr;
+    grid-template-rows: 353px 287px 1fr;
+    grid-template-columns: 511px 1fr;
     justify-content: center;
-    background: no-repeat left/80% url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1862&q=80);
+    background: no-repeat -70px 0px url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1862&q=80);
     background-size: contain;
 }
 
+/*LOGO*/
 .logoContainer{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+.logoBackground{
+    height: 143px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding-top: 5px;
+    margin-bottom: -4px;
 }
 
 .odinTitle{
@@ -41,38 +54,69 @@ body{
     font-size: 5.75rem;
 }
 
-
-.logoBackground{
-    height: 142px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.438);
-}
-
 .logoBackground > img{
-    width: 90px;
+    width: 91px;
     height: fit-content;
 }
 
-
-div:nth-of-type(even){
-    background-color: white;
+/*INTRO*/
+.introContainer{
+    background-color: #f9fafc;;
     color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    padding: 0 0 40px 45px;
+}
+.introContainer > p{
+    font-size: 1.35rem;
+    font-weight: 700;
+
+}
+/*FORM*/
+
+.formContainer{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 12px -6px rgba(0, 0, 0, 0.253);   
+    z-index: 1; 
 }
 
-div:nth-of-type(odd){
-    color: white;
-}
-
+/*CREDITS*/
 .imageCreditsContainer{
     display: flex;
     justify-content: center;
     align-items: end;
     font-size: 0.8rem;
+    color: white;    
+
     }
 
 .imageCreditsContainer a{
     color: white;
+}
+
+/*BUTTONS*/
+.buttonContainer{
+    background-color: #f9fafc;
+    padding: 34px 0 0 46px;
+}
+
+.buttonContainer button{
+    background-color: #596d48;
+    padding: 0.8rem 3.05rem;
+    border:none;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+
+.buttonContainer p{
+    font-weight: 600;
+}
+
+.buttonContainer a{
+    color: #596d48;
+    text-decoration: none;
 }

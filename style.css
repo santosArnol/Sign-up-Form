@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    margin: 0 auto;
+    max-width: 1375px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 288px 1fr;
+    grid-template-columns: 511px 1fr;
+    justify-content: center;
+    background: no-repeat left/80% url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1862&q=80);
+    background-size: contain;
+}
+
+
+
+div:nth-of-type(even){
+    background-color: white;
+    color: black;
+}
+
+div:nth-of-type(odd){
+    color: white;
+}

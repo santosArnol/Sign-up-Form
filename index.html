@@ -27,24 +27,24 @@
 
             <div class="formGroup">
                 <h2 class="form-header">Let's do this!</h2>
-                <form class="form" action="">
+                <form id="form" class="form" action="_blank" method="post">
                     <label for="first-name">FIRST NAME
-                        <input id="first-name" type="text">
+                        <input placeholder="John" required required id="first-name" type="text">
                     </label>
                     <label for="last-name">LAST NAME
-                        <input id="last-name" type="text">
+                        <input placeholder="Doe" required id="last-name" type="text">
                     </label>
                     <label for="email">EMAIL
-                        <input id="email" type="text">
+                        <input placeholder="example@hotmail.com" required id="email" type="text">
                     </label>
                     <label for="phone-number">PHONE NUMBER
-                        <input id="phone-number" type="text">
+                        <input placeholder="xx-xxxxx-xx" required id="phone-number" type="text">
                     </label>
                     <label for="password">PASSWORD
-                        <input id="password" type="password">
+                        <input placeholder="******" required id="password" type="password">
                     </label>
                     <label for="pass-confirm">CONFIRM PASSWORD
-                        <input id="pass-confirm" type="password">
+                        <input placeholder="******" required id="pass-confirm" type="password">
                     </label>
             </div>                                                                              
             
@@ -57,10 +57,11 @@
 
         <div class="buttonContainer">
             <div class="buttonGroup">
-                <button>Create Account</button>
+                <button type="submit" form="form">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
     </div>
+    <script src='script.js'></script>
 </body>
 </html>

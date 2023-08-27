@@ -29,22 +29,22 @@
                 <h2 class="form-header">Let's do this!</h2>
                 <form id="form" class="form" action="_blank" method="post">
                     <label for="first-name">FIRST NAME
-                        <input placeholder="John" required required id="first-name" type="text">
+                        <input pattern="^[a-zA-Z]{1,20}$"  placeholder="John" required required id="first-name" type="text">
                     </label>
                     <label for="last-name">LAST NAME
-                        <input placeholder="Doe" required id="last-name" type="text">
+                        <input pattern="^[a-zA-Z]{1,20}$" placeholder="Doe" required id="last-name" type="text">
                     </label>
                     <label for="email">EMAIL
                         <input placeholder="example@hotmail.com" required id="email" type="text">
                     </label>
                     <label for="phone-number">PHONE NUMBER
-                        <input placeholder="xx-xxxxx-xx" required id="phone-number" type="text">
+                        <input pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="xxx-xxx-xxxx" required id="phone-number" type="text">
                     </label>
                     <label for="password">PASSWORD
-                        <input placeholder="******" required id="password" type="password">
+                        <input pattern="(?=^.{3,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="******" required id="password" type="password">
                     </label>
                     <label for="pass-confirm">CONFIRM PASSWORD
-                        <input placeholder="******" required id="pass-confirm" type="password">
+                        <input pattern="(?=^.{3,}$)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="******" required id="pass-confirm" type="password">
                     </label>
             </div>                                                                              
             
